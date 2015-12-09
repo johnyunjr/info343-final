@@ -1,3 +1,55 @@
+/* import the bootstrap css file from its content delivery network*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 body {
     font-family: "Open Sans", sans-serif;
+    background-image: url("../img/background-md.jpg");
+    background-repeat: no-repeat;
+    background-color: #181C22;
+    background-position: center top;
+    font-weight:300;
+}
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #181C22;
+    font-size: 25px;
+    font-weight:300;
+    width: 100%;
+    font-variant: small-caps;
+    fill:#FFF;
+}
+nav ul {
+    padding-left: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+/*makes the bar horizontally line up*/
+nav li {
+    display: inline-block;
+    padding:0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*decoration of hyperlinks when hoover or focus*/
+nav a:hover, nav a:focus {
+    text-decoration: none;
+    color: white;
+    fill: #D87E28;
+}
+
+svg {
+    height: 1em;
+}
+
+@media(min-width: 768px) {
+    body{
+        background-image: url("../img/background-lg.jpg");
+    }
+
 }
