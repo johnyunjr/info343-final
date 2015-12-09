@@ -9,11 +9,10 @@ body {
     font-weight:300;
 }
 nav {
+    text-align: center;
     position: fixed;
     top: 0;
-    z-index: 1;
-    background-color: #181C22;
-    font-size: 25px;
+    font-size: 40px;
     font-weight:300;
     width: 100%;
     font-variant: small-caps;
