@@ -54,6 +54,27 @@ div.container {
     top: 100px;
 }
 
+#contactDj {
+    width: 80%;
+}
+
+#contact {
+    background-color: yellow!important;
+}
+
+#contactForm .ng-dirty.ng-valid {
+    border: 1px solid #00DD00;
+}
+
+#contactForm .ng-dirty.ng-invalid {
+    border: 1px solid #DD0000;
+}
+
+#messageInp {
+    width: 100%;
+    height: 4em;
+}
+
 @media(min-width: 768px) {
     body{
         background-image: url("../img/dj2.jpg");
