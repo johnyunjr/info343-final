@@ -2,11 +2,12 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 body {
     font-family: "Open Sans", sans-serif;
-    background-image: url("../img/background-md.jpg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-color: #181C22;
     background-position: center top;
     font-weight:300;
+    background-size: cover;
 }
 nav {
     text-align: center;
@@ -48,7 +49,7 @@ svg {
 
 @media(min-width: 768px) {
     body{
-        background-image: url("../img/background-lg.jpg");
+        background-image: url("../img/dj2.jpg");
     }
 
 }
