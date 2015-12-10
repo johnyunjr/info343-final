@@ -6,7 +6,8 @@ body {
     background-repeat: no-repeat;
     background-color: #181C22;
     background-position: center top;
-    font-weight:300;
+    font-weight: 300;
+    color: #FFF;
     background-size: cover;
 }
 nav {
@@ -48,7 +49,6 @@ svg {
 }
 
 div.container {
-    margin: 25px;
     text-align: center;
     position: absolute;
     top: 100px;
@@ -56,11 +56,17 @@ div.container {
 
 #contactDj {
     width: 80%;
+    height: 350px;
+    width: 350px;
 }
 
 #contact {
     background-color: #000;
     color: #FFF;
+}
+
+#contact .container, #story .container {
+    background-color: rgba(0,0,0,0.8);
 }
 
 #contactForm .ng-dirty.ng-valid {
@@ -76,9 +82,32 @@ div.container {
     height: 4em;
 }
 
+#story {
+    clear: both;
+    color: #FFF;
+    width: 100%;
+}
+.container {
+    padding-top: 6em;
+    padding-bottom: 5em;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+
+}
+
+#story img {
+    float: left;
+    max-height: 400px;
+    padding-right: 2em;
+}
+
+#name {
+    font-variant: small-caps;
+}
+
 @media(min-width: 768px) {
-    body{
+    body {
         background-image: url("../img/dj2.jpg");
     }
-
 }
