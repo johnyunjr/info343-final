@@ -67,7 +67,7 @@ div.container {
     color: #FFF;
 }
 
-#contact .container, #story .container {
+#contact .container, #story .container, #name .container {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -91,7 +91,7 @@ div.container {
 }
 .container {
     padding-top: 6em;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
     margin-left: 0;
     padding-left: 0;
     width: 100%;
