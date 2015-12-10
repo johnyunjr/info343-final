@@ -14,9 +14,9 @@ angular.module('djApp', ['ui.router','firebase'])
                 templateUrl: 'views/bio.html',
                 controller: ''
             })
-            .state('soundcloud', {
-                url: '/soundcloud',
-                templateUrl: 'views/soundcloud.html',
+            .state('music', {
+                url: '/music',
+                templateUrl: 'views/music.html',
                 controller: ''
             })
             .state('contact', {
