@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
 
-        <title>Breezee</title>
+        <title>Breezee Music</title>
 
         <!--Bootstrap css, using integrity attr to ensure correct content was downloaded -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
@@ -43,17 +43,18 @@
         <link rel="icon" href="img/breezee-icon.png">
 
     </head>
+
     <body ng-app="djApp">
         <nav>
             <ul>
                 <li><a ui-sref="home">home</a></li>
                 <li><a ui-sref="bio">bio</a></li>
-                <li><a ui-sref="home"><img src="img/logo.png" width="150px"/></a></li>
+                <li><a ui-sref="home"><img src="img/logo.png" id="breezee"/></a></li>
                 <li><a ui-sref="music">music</a></li>
                 <li><a ui-sref="contact">contact</a></li>
             </ul>
         </nav>
         <div class="container" ui-view></div>
-    </body>
 
+    </body>
 </html>
