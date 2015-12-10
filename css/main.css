@@ -13,7 +13,7 @@ body {
     background-size: cover;
 }
 
-body img {
+body #breezee {
     width: 4em;
 }
 
@@ -22,7 +22,7 @@ nav {
     position: absolute;
     top: 0;
     font-size: 18px;
-    font-weight:300;
+    font-weight: 300;
     width: 100%;
     font-variant: small-caps;
     fill:#FFF;
@@ -106,7 +106,7 @@ div.container {
 
 #story img {
     float: left;
-    max-height: 150px;
+    max-height: 250px;
     padding-right: 2em;
     padding-left: 2em;
 }
@@ -116,7 +116,8 @@ div.container {
 }
 
 #name iframe {
-     width="300" height="200"
+     width: 300px;
+     height: 200px;
 }
 
 
@@ -129,27 +130,30 @@ div.container {
         font-size: 40px;
     }
 
-    body img {
+    body #breezee {
         width: 100px;
     }
 
     #story img {
-        font-size: 16px;
+        max-width: 500px;
     }
 
     #name iframe {
-         width="700" height="400"
+         width: 700px;
+         height: 400px;
     }
-
 }
 
 @media(min-width: 1200px) {
     #story img {
-            max-height: 600px;
-            font-size: 20px;
+         max-height: 600px;
     }
 
-    body img {
+    #story {
+        font-size: 20px;
+    }
+
+    body #breezee {
             width: 150px;
     }
 }
