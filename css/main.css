@@ -125,16 +125,18 @@ div.container {
     margin: 1em;
 }
 
-#footer {
+footer {
     background-color: #181C22;
     font-size: 16px;
+    bottom: 0;
+    clear: both;
 }
 
-#footer a {
+footer a {
     color: #fff;
 }
 
-#footer a:hover {
+footer a:hover {
     color: #0A325E;
 }
 
