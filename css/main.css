@@ -135,7 +135,7 @@ div.container {
     }
 
     #story img {
-        max-width: 500px;
+        max-height: 500px;
     }
 
     #name iframe {
@@ -145,15 +145,28 @@ div.container {
 }
 
 @media(min-width: 1200px) {
-    #story img {
-         max-height: 600px;
-    }
 
     #story {
         font-size: 20px;
     }
 
     body #breezee {
-            width: 150px;
+        width: 150px;
     }
+}
+
+@media(min-width: 1600px) {
+    #story img {
+         max-height: 500px;
+    }
+
+    #name iframe {
+         width: 900px;
+         height: 600px;
+    }
+
+    #story {
+         font-size: 25px;
+    }
+
 }
