@@ -64,8 +64,7 @@ div.container {
 
 #contactDj {
     width: 80%;
-    height: 350px;
-    width: 350px;
+    max-height: 250px;
 }
 
 #contact {
@@ -141,6 +140,12 @@ div.container {
     #name iframe {
          width: 700px;
          height: 400px;
+    }
+
+    #contactDj {
+        width: 80%;
+        height: 350px;
+        width: 350px;
     }
 }
 
