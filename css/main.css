@@ -12,16 +12,22 @@ body {
     color: #FFF;
     background-size: cover;
 }
+
+body img {
+    width: 4em;
+}
+
 nav {
     text-align: center;
     position: absolute;
     top: 0;
-    font-size: 40px;
+    font-size: 18px;
     font-weight:300;
     width: 100%;
     font-variant: small-caps;
     fill:#FFF;
 }
+
 nav ul {
     padding-left: 0;
     margin-left: 15px;
@@ -44,18 +50,6 @@ nav a:hover, nav a:focus {
     text-decoration: none;
     color: white;
     fill: #D87E28;
-}
-
-footer {
-    border-top-width: 3px;
-    border-top-style: solid;
-    border-top-color: #D87E28;
-    background-color: #AFB3C2;
-    font-size: 10px;
-    padding-top: 1em;
-    width: 100%;
-    bottom: 0;
-    clear: both;
 }
 
 svg {
@@ -100,7 +94,6 @@ div.container {
     clear: both;
     color: #FFF;
     width: 100%;
-    font-size: 20px;
 }
 .container {
     padding-top: 4em;
@@ -113,7 +106,7 @@ div.container {
 
 #story img {
     float: left;
-    max-height: 400px;
+    max-height: 150px;
     padding-right: 2em;
     padding-left: 2em;
 }
@@ -122,13 +115,41 @@ div.container {
     font-variant: small-caps;
 }
 
+#name iframe {
+     width="300" height="200"
+}
+
 
 @media(min-width: 768px) {
     body {
         background-image: url("../img/dj2.jpg");
     }
 
+    nav {
+        font-size: 40px;
+    }
+
+    body img {
+        width: 100px;
+    }
+
     #story img {
-    max-height: 700px;
+        font-size: 16px;
+    }
+
+    #name iframe {
+         width="700" height="400"
+    }
+
+}
+
+@media(min-width: 1200px) {
+    #story img {
+            max-height: 600px;
+            font-size: 20px;
+    }
+
+    body img {
+            width: 150px;
     }
 }
