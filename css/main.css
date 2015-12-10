@@ -87,6 +87,7 @@ div.container {
 #messageInp {
     width: 100%;
     height: 4em;
+    color:black;
 }
 
 #story {
