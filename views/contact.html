@@ -1,6 +1,5 @@
-<body>
-    <main id = 'contact'>
-        <div class="container">
+<section id = 'contact'>
+    <div class="container">
         <h1>Contact Brennan</h1><br>
         <div class="col-md-6">
             <img src="img/bio2.jpg" alt="bio2" id="contactDj">
@@ -28,7 +27,7 @@
                         <p class="form-group alert-danger lname-required-error" ng-if="contactForm.lnameInp.$error.required && contactForm.lnameInp.$dirty">
                             Please enter your last name
                         </p>
-                    </div>
+                        </div>
 
                     <div class="form-group">
                         <label for="emailInp">Email:</label>
@@ -41,9 +40,8 @@
                             Valid email address is required
                         </p>
                     </div>
-                    
                     <div class="form-group">
-                        <label for="messageInp">Message</label>
+                        <label for="messageInp">Message:</label>
                         <textarea name="messageInp" ng-model="contact.message" id="messageInp" placeholder="Leave your message here" required></textarea>
                         <p class="form-group alert-danger lname-required-error" ng-if="contactForm.messageInp.$error.required && contactForm.messageInp.$dirty">
                             Please leave a message
@@ -56,6 +54,5 @@
                 </form>
             </div>
         </div>
-        </div>
-    </main>
-</body>
+    </div>
+</section>
