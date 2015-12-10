@@ -11,7 +11,7 @@ body {
 }
 nav {
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     font-size: 40px;
     font-weight:300;
@@ -52,6 +52,28 @@ div.container {
     text-align: center;
     position: absolute;
     top: 100px;
+}
+
+#contactDj {
+    width: 80%;
+}
+
+#contact {
+    background-color: #000;
+    color: #FFF;
+}
+
+#contactForm .ng-dirty.ng-valid {
+    border: 1px solid #00DD00;
+}
+
+#contactForm .ng-dirty.ng-invalid {
+    border: 1px solid #DD0000;
+}
+
+#messageInp {
+    width: 100%;
+    height: 4em;
 }
 
 @media(min-width: 768px) {
