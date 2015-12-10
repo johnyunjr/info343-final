@@ -100,6 +100,7 @@ div.container {
     clear: both;
     color: #FFF;
     width: 100%;
+    font-size: 20px;
 }
 .container {
     padding-top: 4em;
@@ -114,6 +115,7 @@ div.container {
     float: left;
     max-height: 400px;
     padding-right: 2em;
+    padding-left: 2em;
 }
 
 #name {
@@ -124,5 +126,9 @@ div.container {
 @media(min-width: 768px) {
     body {
         background-image: url("../img/dj2.jpg");
+    }
+
+    #story img {
+    max-height: 700px;
     }
 }
