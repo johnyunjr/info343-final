@@ -12,7 +12,7 @@ angular.module('djApp', ['ui.router','firebase'])
             .state('bio', {
                 url: '/bio',
                 templateUrl: 'views/bio.html',
-                controller: ''
+                controller: 'bioController'
             })
             .state('music', {
                 url: '/music',
@@ -29,6 +29,21 @@ angular.module('djApp', ['ui.router','firebase'])
     .controller('homeController', function() {
         console.log('hahaha home ');
         //do nothing
+    })
+    .controller('bioController', function() {
+        var images = ["img/bio.jpg", "img/bio2.jpg", "img/bio3.jpg"];
+
+        window.setInterval(rotateImage, 5000);
+
+        function rotateImage() {
+            if ($("#bioImg").attr("src") == images[0]) {
+                $("#bioImg").attr("src", images[1]);
+            } else if ($("#bioImg").attr("src") == images[1]) {
+                $("#bioImg").attr("src", images[2]);
+            } else {
+                $("#bioImg").attr("src", images[0]);
+            }
+        }
     })
     .controller('contactController', function($window, $scope, $timeout) {
         $scope.submit = false;
