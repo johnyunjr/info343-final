@@ -1,15 +1,17 @@
 <section id = 'contact'>
     <div class="container">
-        <h1>Contact Brennan</h1><br>
-        <div class="col-md-6">
+        <h1>Contact Brennan</h1><br><br>
+        <div class="col-md-4">
             <img src="img/bio2.jpg" alt="bio2" id="contactDj">
             <p>Bellevue/Seattle, WA</p>
             <a href="mailto:breezeemgmt@gmail.com">Email: breezeemgmt@gmail.com</a><br>
             <a href="tel: +1-425-945-6414">Tel: 425-945-6414</a>
         </div>
-        <div class="col-md-6" >
+
+        <div class="col-md-4">
             <p class="alert alert-success" id="confirmation" ng-show="submit">You have successfully submitted your message!</p>
             <div>
+                <h3>Message</h3>
                 <form name="contactForm" id="contactForm" ng-submit="saveMessage()" ng-model="contactForm" novalidate>
                     <div class="form-group">
                         <label for="fnameInp">First Name:</label>
@@ -49,10 +51,19 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Submit</button>
+                        <button type="submit" class="btn btn-default" ng-disabled="contactForm.$invalid">Submit</button>
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div class="col-md-4" id="socialMedia">
+            <h3>Social Media</h3>
+                <a href="https://soundcloud.com/breezee-music" target="_blank"><i class="fa fa-soundcloud"></i> - SoundCloud</a><br>
+                <a href="https://www.facebook.com/OfficialBreezee" target="_blank"><i class="fa fa-facebook-official"></i> - Facebook</a><br>
+                <a href="http://twitter.com/BREEZEEmusic" target="_blank"><i class="fa fa-twitter-square"></i> - Twitter</a><br>
+                <a href=http://www.youtube.com/officialbreezee" target="_blank"><i class="fa fa-youtube-square"></i> - Youtube</a><br>
+                <a href="http://www.instagram.com/breezeemusic" target="_blank"><i class="fa fa-instagram"></i> - Instabreeze</a>
         </div>
     </div>
 </section>
