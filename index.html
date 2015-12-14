@@ -7,7 +7,7 @@
         <title>BREEZEE Music</title>
 
         <!--Bootstrap css, using integrity attr to ensure correct content was downloaded -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
         <!-- Font awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -17,6 +17,9 @@
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- bootstrap javascript-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         <!-- angular script file -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -45,6 +48,7 @@
     </head>
 
     <body ng-app="djApp">
+
         <nav>
             <ul>
                 <li><a ui-sref="home">home</a></li>
@@ -54,7 +58,38 @@
                 <li><a ui-sref="contact">contact</a></li>
             </ul>
         </nav>
-        <div class="container" ui-view></div>
 
+        <div id="socialBig">
+            <a href="https://soundcloud.com/breezee-music"><i class="fa fa-soundcloud"></i></a>
+            <a href="https://www.facebook.com/OfficialBreezee"><i class="fa fa-facebook-official"></i></a>
+            <a href="http://twitter.com/BREEZEEmusic"><i class="fa fa-twitter-square"></i></a>
+            <a href=http://www.youtube.com/officialbreezee"><i class="fa fa-youtube-square"></i></a>
+            <a href="http://www.instagram.com/breezeemusic"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <!-- dropdown men for small screens -->
+        <div id="dropdown" class="dropdown">
+            <a ui-sref="home"><img src="img/logo.png" id="breezee"/></a><br><br>
+            <div id="social">
+                <a href="https://soundcloud.com/breezee-music"><i class="fa fa-soundcloud"></i></a>
+                <a href="https://www.facebook.com/OfficialBreezee"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://twitter.com/BREEZEEmusic"><i class="fa fa-twitter-square"></i></a>
+                <a href=http://www.youtube.com/officialbreezee"><i class="fa fa-youtube-square"></i></a>
+                <a href="http://www.instagram.com/breezeemusic"><i class="fa fa-instagram"></i></a>
+            </div><br>
+
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a ui-sref="home">home</a></li>
+                <li><a ui-sref="bio">bio</a></li>
+                <li><a ui-sref="music">music</a></li>
+                <li><a ui-sref="contact">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="container" ui-view>
+
+        </div>
     </body>
 </html>

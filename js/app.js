@@ -12,7 +12,7 @@ angular.module('djApp', ['ui.router','firebase'])
             .state('bio', {
                 url: '/bio',
                 templateUrl: 'views/bio.html',
-                controller: ''
+                controller: 'bioController'
             })
             .state('music', {
                 url: '/music',
@@ -27,11 +27,28 @@ angular.module('djApp', ['ui.router','firebase'])
         $urlRouterProvider.otherwise('/');
     })
     .controller('homeController', function() {
-        console.log('hahaha home ');
-        //do nothing
+        // do nothing
+    })
+    .controller('bioController', function() {
+        // rotate images
+        var images = ["img/bio.jpg", "img/bio2.jpg", "img/bio3.jpg"];
+
+        window.setInterval(rotateImage, 5000);
+
+        function rotateImage() {
+            if ($("#bioImg").attr("src") == images[0]) {
+                $("#bioImg").attr("src", images[1]);
+            } else if ($("#bioImg").attr("src") == images[1]) {
+                $("#bioImg").attr("src", images[2]);
+            } else {
+                $("#bioImg").attr("src", images[0]);
+            }
+        }
     })
     .controller('contactController', function($window, $scope, $timeout) {
         $scope.submit = false;
+
+        // send message to firebase
         $scope.saveMessage = function() {
             var rootRef = new Firebase('https://djbreezee.firebaseio.com/').child('message');
             var latestMessage = new Firebase('https://djbreezee.firebaseio.com/').child('message').child('latest');
@@ -42,6 +59,8 @@ angular.module('djApp', ['ui.router','firebase'])
                 "message": $scope.contact.message,
                 "createdAt": Firebase.ServerValue.TIMESTAMP
             };
+
+            // reset form and show success message
             var push = rootRef.push(newContact);
             var newId = push.key();
             newContact.idNumber = newId;
